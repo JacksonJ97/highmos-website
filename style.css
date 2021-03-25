@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================
+    Hero Area
+========================= */
+
+.container {
+    max-width: 1400px;
+    padding: 24px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Highmos/img/image-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+}
+
+.reservation-btn {
+    font-size: 0.625rem;
+    font-weight: 600;
+    background-color: #fe5303;
+    border: none;
+    border-radius: 52px;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    padding: 12px 28px;
+}
+
+.reservation-btn .material-icons {
+    font-size: 1rem;
+    margin-right: 12px;
+}
+
+/* Hero Text Area */
+
+.hero-section {
+    margin-top: 64px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #ffffff;
+
+    max-width: 400px;
+    margin: 0;
+    margin-bottom: 48px;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 48px;
+}
+
+.subtitle .material-icons {
+    font-size: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    padding: 8px;
+    margin-left: 18px;
+}
+
+/* Booking Area */
+
+.booking-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-now-btn {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #fe5303;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(254, 83, 3, 0.6);
+
+    padding: 24px;
+    align-self: center;
+}
+
+.booking-inputs {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    max-width: 800px;
+    padding: 16px 24px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+input,
+select {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    border: none;
+
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.input {
+    margin-bottom: 8px;
+}
+
+.input label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #bdbdbd;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 1400px) {
+    .hero-container {
+        height: 100vh;
+    }
+
+    .container {
+        padding: 48px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .reservation-btn {
+        font-size: 1rem;
+    }
+
+    .reservation-btn .material-icons {
+        font-size: 1.25rem;
+    }
+
+    .hero-section {
+        margin-top: 128px;
+    }
+
+    .text-container {
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 4rem;
+        max-width: 600px;
+    }
+
+    .subtitle {
+        margin-bottom: 64px;
+    }
+
+    .booking-inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 24px;
+    }
+
+    .input {
+        border-right: 1px solid #e0e0e0;
+        margin: 0;
+        padding-right: 24px;
+    }
+
+    .input:last-child {
+        border: none;
+    }
+
+    .booking-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-now-btn {
+        padding: 40px;
+        margin-bottom: 22px;
+        margin-left: 16px;
+    }
+}
+
+/* ======================
+    About Us
+========================= */
+
+.section-name {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #bdbdbd;
+
+    margin-top: 48px;
+}
+
+.about-us-title {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333333;
+
+    margin: 0;
+}
+
+.about-us-text {
+    text-align: justify;
+    font-size: 1rem;
+    color: #828282;
+
+    margin: 0;
+}
+
+.about-us-image {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.about-us-content {
+    display: grid;
+    row-gap: 24px;
+
+    margin-top: 32px;
+}
+
+.about-us-column-left,
+.about-us-column-right {
+    display: grid;
+    row-gap: 32px;
+}
+
+@media only screen and (min-width: 800px) {
+    .about-us-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+    }
+
+    .about-us-column-right img {
+        order: -1;
+    }
+}
+
+/* ======================
+    Accommodations
+========================= */
+
+.acc-name {
+    margin-top: 32px;
+}
+
+.acc-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #333333;
+
+    margin: 0;
+    margin-top: 24px;
+}
+
+.rooms-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #fe5303;
+    background: transparent;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.rooms-button .material-icons {
+    margin-left: 12px;
+}
+
+.stays {
+    margin-top: 32px;
+
+    display: grid;
+    row-gap: 32px;
+}
+
+.stay-card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    height: 380px;
+}
+
+.stay-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    transition: opacity 200ms ease-in-out;
+}
+
+.stay-card:hover::before {
+    opacity: 0;
+}
+
+.stay-card:hover .stay-card-name {
+    transform: translateX(calc(-100% - 12px));
+}
+
+.stay-card:hover .stay-card-price {
+    transform: translateX(calc(-100% - 12px));
+}
+
+.stay-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.stay-card-details {
+    position: absolute;
+    bottom: 24px;
+    left: 12px;
+}
+
+.stay-card-name {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    margin-bottom: 12px;
+
+    transition: transform 200ms ease-in-out;
+}
+
+.stay-card-price {
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    transition: transform 200ms ease-in-out 100ms;
+}
+
+@media only screen and (min-width: 800px) {
+    .stays {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+    }
+
+    .stay-card-col-2 {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .stays {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* ======================
+    Accommodations
+========================= */
+
+.testimonials {
+    background-color: #f2f2f2;
+    margin-top: 48px;
+    padding-bottom: 48px;
+}
+strong {
+    color: #fe5303;
+}
+
+.testimonial-title {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.feedback {
+    display: grid;
+    row-gap: 48px;
+    margin-top: 48px;
+}
+
+.feedback-card-dialogue {
+    font-family: "Playfair Display", serif;
+    background-color: #ffffff;
+    padding: 48px 24px;
+    border-radius: 20px 20px 20px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-card-dialogue-title {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.feedback-card-dialogue-content {
+    color: #4f4f4f;
+    line-height: 180%;
+}
+
+.feedback-card-user {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    column-gap: 24px;
+    margin-top: 24px;
+}
+
+.feedback-card-user img {
+    width: 100%;
+}
+
+.feedback-card-user-name {
+    font-weight: 500;
+}
+
+.feedback-card-user-location {
+    color: #bdbdbd;
+    font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .feedback {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 24px;
+    }
+}
+
+footer {
+    font-family: "Playfair Display", serif;
+}
